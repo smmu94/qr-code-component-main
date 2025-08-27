@@ -1,6 +1,6 @@
 :root {
     /* Colors */
-    --white: hsl(0, 0%, 100%);
+    --bg-white: hsl(0, 0%, 100%);
     --slate-300: hsl(212, 45%, 89%);
     --slate-500: hsl(216, 15%, 48%);
     --slate-900: hsl(218, 44%, 22%);
@@ -8,17 +8,17 @@
     /* Typography */
     --font-sans: 'Outfit', sans-serif;
 
-    --preset-1: 700 22px/1.2 var(--font-sans);
-    --preset-2: 400 15px/1.4 var(--font-sans);
+    --preset-1: 700 1.375rem/1.2 var(--font-sans);
+    --preset-2: 400 0.9375rem/1.4 var(--font-sans);
 
     /* Spacing */
-    --spacing-200: 16px;
-    --spacing-300: 24px;
-    --spacing-500: 40px;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-500: 2.5rem;
 
     /* Borders */
-    --border-small: 10px;
-    --border-large: 20px;
+    --border-small: 0.625rem;
+    --border-large: 1.25rem;
 }
 
 * {
@@ -38,10 +38,10 @@ body {
 }
 
 .card {
-    background-color: var(--white);
+    width: 20rem;
+    background-color: var(--bg-white);
     border-radius: var(--border-large);
     padding: var(--spacing-200) var(--spacing-200) var(--spacing-500);
-    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,11 +52,10 @@ body {
 .card__image {
     border-radius: var(--border-small);
     aspect-ratio: 1;
-    width: 288px;
+    width: 100%;
 }
 
 .card__content {
-    max-width: 288px;
     padding: 0 var(--spacing-200);
     display: flex;
     flex-direction: column;
